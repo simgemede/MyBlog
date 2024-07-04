@@ -28,3 +28,28 @@
     height: 40px;
     border-radius: 50%;
 }
+
+.topbar .right .searchEngine{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.topbar .right .searchEngine i{
+    position: absolute;
+    right: 0px;
+    background-color: orange;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.topbar .right .searchEngine input{
+    width: 95%;
+    margin-right: 20px;
+}
