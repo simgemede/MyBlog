@@ -15,6 +15,10 @@
     justify-content: space-evenly;
 }
 
+.topbar .left i{
+    font-size: 1.3rem;
+}
+
 .topbar .center{
     flex: 6;
     height: 100%;
@@ -30,6 +34,7 @@
 }
 
 .topbar .right .searchEngine{
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -52,4 +57,22 @@
 .topbar .right .searchEngine input{
     width: 95%;
     margin-right: 20px;
+    height: 20px;
+    border-radius: 3px;
+    padding: 0px 0px 0px 10px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.topbar .right .searchEngine{
+    width: 0px;
+    transition: all 0.5s;
+}
+
+.topbar .right .searchEngine.active{
+    width: 170px;
+}
+
+.topbar .right .searchEngine.active input{
+    opacity: 1;
 }
